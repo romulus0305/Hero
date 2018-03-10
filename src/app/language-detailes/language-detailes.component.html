@@ -1,0 +1,13 @@
+
+<div class="wrapper" *ngIf="lang">
+    <div class="detailes">
+    <p><span> {{lang.name}} </span>Detailes</p>
+    <p><span>languageId:</span> {{lang.id}} </p>
+    <p><span>Name of Programming language: </span> {{lang.name}} </p>
+    <p><span>Coding expirience: </span> {{lang.expirience}} </p>
+    <input [(ngModel)]="lang.name" placeholder="name">
+  </div>
+  <div class="suggetions" *ngIf="lang.expirience <= 5">
+  <p>Treba jos da se vezba {{ lang.name}} </p>
+  </div>
+  </div>

@@ -1,0 +1,5 @@
+<ul>
+   <li *ngFor="let lng of programmingLanguages" (click)="selectedLanguage(lng)" [class.selected]="selectedLng === lng" >{{lng.name}} </li>
+</ul>
+
+<app-language-detailes [lang]="selectedLng" ></app-language-detailes>
